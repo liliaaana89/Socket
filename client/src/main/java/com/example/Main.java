@@ -32,8 +32,14 @@ public class Main {
             String risposta = in.readLine();
             
             System.out.println("Risposta server: " + risposta);
-            
+
             
         }
+        scanner.close();
+        in.close();
+        out.close();
+        s.close();
+
+        System.out.println("Client terminato");
     }
 }
