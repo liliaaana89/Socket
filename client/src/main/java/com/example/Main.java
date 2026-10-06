@@ -1,5 +1,6 @@
 package com.example;
 
+import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
@@ -12,9 +13,13 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+        PrintWriter out = new PrintWriter(s.getOutputStream(), true);
+
         while (true) {
             System.out.println("Inserisci un messaggio: ");
             String testo = scanner.nextLine();
+
+            out.println(testo);
             
         }
     }
