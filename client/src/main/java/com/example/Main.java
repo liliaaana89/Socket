@@ -20,6 +20,10 @@ public class Main {
             String testo = scanner.nextLine();
 
             out.println(testo);
+
+            if(testo.equals("exit")){
+                break;
+            }
             
         }
     }
