@@ -15,6 +15,16 @@ public class Main {
         System.out.println("Client connesso");
 
         BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
+
+        while (true) {
+            String testo = in.readLine();
+
+            if(testo.equals("exit")) {
+                break;
+            }
+
+            System.out.println("Messaggio ricevuto: " + testo);
+        }
     }
 
 
