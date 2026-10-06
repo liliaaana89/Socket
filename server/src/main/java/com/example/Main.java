@@ -32,6 +32,13 @@ public class Main {
 
             out.println(maiuscolo);
         }
+
+        in.close();
+        out.close();
+        s.close();
+        ss.close();
+
+        System.out.println("Server termianto");
     }
 
 
